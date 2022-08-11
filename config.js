@@ -12,7 +12,7 @@ const DB_URI = (process.env.NODE_ENV === "test")
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret";
 
-export default {
+module.exports = {
   DB_URI,
   SECRET_KEY
 };

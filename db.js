@@ -4,10 +4,13 @@
 Database connection for survey.
 */
 
-import { Client } from "pg";
-import { DB_URI } from ("./config");
+const { Client } = require("pg");
 
-const db = new Client(DB_URI);
+const { DB_URI } = require("./config");
+console.log(DB_URI);
+const db = new Client({
+  connectionString: DB_URI
+});
 
 db.connect();
 
