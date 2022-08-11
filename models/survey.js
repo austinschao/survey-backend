@@ -12,7 +12,7 @@ class Survey {
   Submit a survey. Returns
   {first_name, last_name, experience, frontend, backend, coding_language}
   */
-  static async submit({ first_name, last_name, experience, education, frontend, backend, coding_language }) {
+  static async submit({ firstName, lastName, experience, education, frontend, backend, language }) {
     const result = await db.query(
       `INSERT INTO survey
         (first_name,
@@ -21,12 +21,13 @@ class Survey {
           education,
           frontend,
           backend,
-          coding_language)
+          language)
         VALUES ($1, $2, $3, $4, $5, $6, $7)
-        RETURNING first_name, last_name, experience, education, frontend, backend, coding_language`,
-      [first_name, last_name, experience, education, frontend, backend, coding_language]
+        RETURNING first_name AS "firstName",
+        last_name AS "lastName", experience, education,
+        frontend, backend, language`,
+      [firstName, lastName, experience, education, frontend, backend, language]
     );
-    debugger;
     return result.rows[0];
   }
 }
