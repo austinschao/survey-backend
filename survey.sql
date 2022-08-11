@@ -13,7 +13,7 @@ CREATE TABLE survey (
     education INT NOT NULL,
     frontend INT NOT NULL,
     backend INT NOT NULL,
-    coding_language INT NOT NULL,
+    language INT NOT NULL,
     sent_at TIMESTAMP WITH TIME ZONE
 )
 
@@ -32,6 +32,6 @@ CREATE TABLE survey (
     education INT NOT NULL,
     frontend INT NOT NULL,
     backend INT NOT NULL,
-    coding_language INT NOT NULL,
+    language INT NOT NULL,
     sent_at TIMESTAMP WITH TIME ZONE
 )
