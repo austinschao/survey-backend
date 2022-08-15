@@ -8,7 +8,7 @@ const surveySchema = require("../schemas/surveyNew.json");
 
 /** POST / - Submit a survey.
  *
- * {first_name, last_name, experience, frontend, backend, coding_language}
+ * {first_name, last_name, experience, frontend, backend}
  */
 router.post("/", async function (req, res) {
   debugger;

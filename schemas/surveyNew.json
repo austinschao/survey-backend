@@ -32,11 +32,6 @@
             "type": "integer",
             "minimum": 0,
             "maximum": 4
-        },
-        "language": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 4
         }
     },
     "additionalProperties": false,
