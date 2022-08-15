@@ -16,22 +16,22 @@
         "experience": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 4
+            "maximum": 3
         },
         "education": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 4
+            "maximum": 2
         },
         "frontend": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 4
+            "maximum": 3
         },
         "backend": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 4
+            "maximum": 3
         }
     },
     "additionalProperties": false,
@@ -41,7 +41,6 @@
         "experience",
         "education",
         "frontend",
-        "backend",
-        "language"
+        "backend"
     ]
 }
